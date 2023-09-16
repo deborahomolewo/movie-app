@@ -1,0 +1,19 @@
+.movie{
+    width:100%;
+}
+
+.movie img{
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content h1 {
+    color: black;
+}
+
+.content p {
+    color: black;
+}

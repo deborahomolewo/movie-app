@@ -1,0 +1,46 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.signIn {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+
+.search {
+  display: flex;
+  width: 525px;
+  height: 36px;
+  padding: 6px, 10px, 6px, 10px;
+  border-radius: 6px;
+  border: 2px solid; 
+  border-color:#D1D5DB;
+  justify-content: center;
+  text-align: center;
+}
+
+.search input {
+  background: none;
+  outline: none !important;
+  border: none;
+  width: 100%;
+  color: #fff !important;
+  padding: 10px;
+}
+
+.search input::placeholder {
+  color: #fff;
+}
+
+.search img {
+  width: 15px;
+  height: 15px;
+  padding: 10px;
+}
+  
+
+

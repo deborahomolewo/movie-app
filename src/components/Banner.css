@@ -1,0 +1,25 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+   justify-content: space-around;
+   padding-left: 120px;
+   width: 284px;
+   gap: 8px;
+}
+
+.banner h1 {
+    color: white;
+}
+
+.logo {
+    display: flex;
+    gap: 30px;
+}
+
+.button{
+    height: 36px;
+    width: 169px;
+}
+.details {
+    color: white;
+}
