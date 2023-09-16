@@ -4,6 +4,7 @@ import "../components/Nav.css";
 function Nav({ setSearch }) {
   const searchMovies = async (title) => {
     setSearch(title);
+    
   };
 
   const inputRef = useRef(null);
@@ -19,7 +20,7 @@ function Nav({ setSearch }) {
         <img
           src="/images/search.svg"
           alt="search"
-          onClick={() => searchMovies(inputRef.value)}
+          onClick={() => searchMovies(inputRef.current.value)}
         />
       </div>
       <div className="signIn">
@@ -28,6 +29,7 @@ function Nav({ setSearch }) {
       </div>
     </nav>
   );
+
 }
 
 export default Nav;
