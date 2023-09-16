@@ -30,6 +30,16 @@ function MovieDetail() {
 
     fetchMovie();
   }, [movie]);
+  
+  const releaseDate = new Date(movie.release_date);
+  const utcYear = releaseDate.getUTCFullYear();
+  const utcMonth = (releaseDate.getUTCMonth() + 1).toString().padStart(2, '0');
+  const utcDay = releaseDate.getUTCDate().toString().padStart(2, '0');
+  const utcHours = releaseDate.getUTCHours().toString().padStart(2, '0');
+  const utcMinutes = releaseDate.getUTCMinutes().toString().padStart(2, '0');
+
+  const utcDateString = `${utcYear}-${utcMonth}-${utcDay} ${utcHours}:${utcMinutes} UTC`;
+
 
   return (
     <>
@@ -39,7 +49,7 @@ function MovieDetail() {
       </div>
       <div className="videoContent">
         <h1 data-testid="movie-title">{movie.original_title}</h1>
-        <p data-testid="movie-release-date">{movie.release_date}</p>
+        <p data-testid="movie-release-date">{utcDateString}</p>
         <p data-testid="movie-runtime">{movie.runtime} minutes</p>
         <p data-testid="movie-overview">{movie.overview}</p>
       </div>
