@@ -17,7 +17,7 @@ function Nav({ setSearch }) {
           onChange={(e) => searchMovies(e.target.value)}
         />
         <img
-          src="/images/icon.svg"
+          src="/images/search.svg"
           alt="search"
           onClick={() => searchMovies(inputRef.value)}
         />
