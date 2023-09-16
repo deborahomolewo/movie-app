@@ -9,7 +9,7 @@ function Nav({ setSearch }) {
   const inputRef = useRef(null);
   return (
     <nav>
-      <img src="../images/Logo.svg" alt="logo" />
+      <img src="/images/Logo.svg" alt="logo" />
       <div className="search">
         <input
           placeholder="What do you want to watch?"
@@ -17,14 +17,14 @@ function Nav({ setSearch }) {
           onChange={(e) => searchMovies(e.target.value)}
         />
         <img
-          src="../images/icon.svg"
+          src="/images/icon.svg"
           alt="search"
           onClick={() => searchMovies(inputRef.value)}
         />
       </div>
       <div className="signIn">
         <h4>Sign in</h4>
-        <img src="../images/Menu.svg" alt="Menu" />
+        <img src="/images/Menu.svg" alt="Menu" />
       </div>
     </nav>
   );
