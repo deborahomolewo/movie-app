@@ -48,7 +48,7 @@ function MovieDetail() {
         <img src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`} alt="backdrop"/>
       </div>
       <div className="videoContent">
-        <h1 data-testid="movie-title">{movie.original_title}</h1>
+        <h1 data-testid="movie-title">{movie.title}</h1>
         <p data-testid="movie-release-date">{utcDateString}</p>
         <p data-testid="movie-runtime">{movie.runtime} minutes</p>
         <p data-testid="movie-overview">{movie.overview}</p>
