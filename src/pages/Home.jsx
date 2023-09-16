@@ -15,9 +15,9 @@ function Home() {
     const fetchData = async () => {
       try {
 
-        let apiUrl = `https://api.themoviedb.org/3/movie/top_rated?api_key=2f3d300c8b20dd64c1d363bb91a7daa0`;
+        let apiUrl = `https://api.themoviedb.org/3/movie/top_rated?api_key=2f3d300c8b20dd64c1d363bb91a7daa0&language=en-US`;
         if(search !==""){
-          apiUrl = `https://api.themoviedb.org/3/search/movie?query=${search}&page=1&api_key=2f3d300c8b20dd64c1d363bb91a7daa0`;
+          apiUrl = `https://api.themoviedb.org/3/search/movie?query=${search}&page=1&api_key=2f3d300c8b20dd64c1d363bb91a7daa0&language=en-US`;
         }
         console.log(search);
         const response =  await fetch(apiUrl);
